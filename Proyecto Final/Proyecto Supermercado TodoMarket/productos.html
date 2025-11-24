@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Proyecto Supermercado TodoMarket/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Logo y menú -->
+        <img src="../Proyecto Supermercado TodoMarket/css/logo.png" alt="Logo TodoMarket" class="logo">
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./reseñas.html">Reseñas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Sección de categorías -->
+        <section class="grid-example">
+            <div class="carniceria">
+                <h1>Carnicería</h1>
+                <button class="ver-productos" data-categoria="carniceria">Abrir Catálogo</button>
+            </div>
+
+            <div class="lacteos">
+                <h2>Lácteos</h2>
+                <button class="ver-productos" data-categoria="lacteos">Abrir Catálogo</button>
+            </div>
+
+            <div class="frutasyverduras">
+                <h3>Verduleria</h3>
+                <button class="ver-productos" data-categoria="frutasyverduras">Abrir Catálogo</button>
+            </div>
+
+            <div class="bebidas">
+                <h4>Bebidas</h4>
+                <button class="ver-productos" data-categoria="bebidas">Abrir Catálogo</button>
+            </div>
+
+            <div class="limpieza">
+                <h5>Limpieza</h5>
+                <button class="ver-productos" data-categoria="limpieza">Abrir Catálogo</button>
+            </div>
+        </section>
+
+        <!-- Productos cargados dinámicamente -->
+        <section id="contenedor-productos" class="grid-productos"></section>
+
+        <!-- Botonera del carrito -->
+        <div class="carrito-controles">
+            <button id="boton-carrito">
+                🛒 Carrito (<span id="contador-carrito">0</span>)
+            </button>
+
+            <button id="vaciar-carrito">Vaciar carrito</button>
+        </div>
+
+        <!-- Mini-carrito flotante (único) -->
+        <div id="mini-carrito" class="mini-carrito oculto"></div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TodoMarket. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/Proyectos/Proyecto Final/Proyecto Supermercado TodoMarket/js/index.js"></script>
+</body>
+
+</html>

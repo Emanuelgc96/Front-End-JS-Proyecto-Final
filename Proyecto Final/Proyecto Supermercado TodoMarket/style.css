@@ -1,0 +1,766 @@
+body {/*Aplica a todo la pagina en general,por eso esta dividio todo en partes diferentes*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;/*elimina el margen blanco que los navegadores ponen por defecto*/
+  padding: 0;/*elimina el espacio interno que tambien algunos navegadores agregan.*/
+  background-image: url(./css/fondo.jpg);
+  background-size: cover;/* La imagen de fondo cubre toda el área disponible */
+  overflow-y: scroll;/* Siempre muestra la barra de desplazamiento vertical *//* El menu reseñas tiene un scroll para abajo,pero las demas paginas no lo tienen,entonces cuando entro al menu reseñas se achica la pantalla 
+por la barra de scroll,esto solucion para que todos las paginas tengan la misma anchura*/
+  display: flex;/* convierte todo el body en flexbox */
+  flex-direction: column;/* columna vertical: header, main, footer */
+  min-height: 100vh;/* mínimo alto de la pantalla completa */
+
+}
+
+
+
+
+/*--------------------------------------------------------------------------*/
+
+header {
+  /*MENU*/
+  display: flex;
+  justify-content: space-between;
+  /* Separa los elementos: el primero(h1) va a la izquierda, el último(lista) a la derecha */
+  align-items: center;
+  /* Centra verticalmente todos los elementos dentro del header */
+  background-image: url("../css/fondo.jpg");
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  /* sombra negra suave al texto*/
+  font-weight: bold;
+  padding: 5px 10px;
+  /*Ancho*/
+}
+
+/*-----------------------------------------------------------------------*/
+
+nav ul {
+  list-style: none;
+  /*La lista que no tenga viñetas*/
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+
+}
+
+nav a {
+  /*Estilo de los enlaces */
+  text-decoration: none;
+  /* quita el subrayado */
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  /* sombra negra suave al texto*/
+}
+
+nav a:hover {
+  /*Efecto al pasar el mouse por encima de los botones de los menu*/
+  color: rgb(25, 0, 255);
+  /* cambia el color */
+  text-shadow: 2px 2px 4px black;
+  transition: 0.3s ease;
+  /* animación suave */
+}
+
+#contacto form {
+  display: flex;
+  /*Usar Flexbox para organizar los elementos del formulario */
+  flex-direction: column;
+  /*Coloca los elementos uno debajo del otro (vertical) */
+  max-width: 400px;
+  /* ancho máximo del formulario */
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  /* bordes redondeados */
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  /* espacio interno */
+  color: white;
+  /*color del texto*/
+  text-shadow: 1px 1px 2px black;
+  /* sombra negra suave */
+
+}
+
+#contacto input,
+#contacto textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid black;
+  resize: none;
+  /* impide que el usuario cambie el tamaño */
+}
+
+#contacto button {
+  /*contacto botones*/
+  padding: 10px;
+  /* Espacio interno dentro del botón (arriba, abajo, izquierda, derecha) */
+  color: white;
+  /* Color del texto del botón */
+  border-radius: 5px;
+  /* Bordes redondeados del botón */
+  cursor: pointer;
+  /* Cambia el cursor al pasar por encima, indicando que es clickeable */
+  background-color: rgba(0, 123, 255, 0.5);
+  /* azul más fuerte y visible */
+  border: none;
+}
+
+
+.botones {
+  display: flex;
+  /* coloca los botones en fila */
+  justify-content: flex-start;
+  /* los alinea al principio (izquierda) */
+  gap: 10px;
+  /* espacio entre los botones */
+}
+
+label {
+  color: white;
+  font-weight: bold;
+  /*Para que se vea más fuerte */
+}
+
+/*-------------------------------------------------------------------*/
+/*PRODUCTOS*/
+
+.grid-example {
+  display: flex;
+  /* activa Flexbox */
+  flex-wrap: wrap;
+  /* permite que las cards pasen a otra fila */
+  gap: 20px;
+  /* espacio entre las cards */
+  justify-content: center;
+  /* centra las cards horizontalmente */
+  margin: 20px auto;
+  /* margen arriba/abajo y centrado */
+}
+
+.carniceria {
+  background-image: url("./css/carne.jpg");
+  background-size: cover;
+  /* llena toda la card sin deformarse */
+  background-position: center;
+  /* centra la imagen */
+  background-repeat: no-repeat;
+  /* no se repite */
+  width: 150px;
+  /* ancho de la card */
+  height: 100px;
+  /* altura de la card, igual que tus otras cards */
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  /* texto visible */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* el texto queda abajo de la card */
+}
+
+.lacteos {
+  background-image: url("./css/lacteos.jpg");
+  background-size: cover;
+  /* llena toda la card sin deformarse */
+  background-position: center;
+  /* centra la imagen */
+  background-repeat: no-repeat;
+  /* no se repite */
+  width: 150px;
+  /* ancho de la card */
+  height: 100px;
+  /* altura de la card, igual que tus otras cards */
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  /* texto visible */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* el texto queda abajo de la card */
+}
+
+.frutasyverduras {
+  background-image: url("./css/frutas\ y\ verduras.jpg");
+  background-size: cover;
+  /* llena toda la card sin deformarse */
+  background-position: center;
+  /* centra la imagen */
+  background-repeat: no-repeat;
+  /* no se repite */
+  width: 150px;
+  /* ancho de la card */
+  height: 100px;
+  /* altura de la card, igual que tus otras cards */
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  /* texto visible */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* el texto queda abajo de la card */
+}
+
+.bebidas {
+  background-image: url("./css/bebidas.jpg");
+  background-size: cover;
+  /* llena toda la card sin deformarse */
+  background-position: center;
+  /* centra la imagen */
+  background-repeat: no-repeat;
+  /* no se repite */
+  width: 150px;
+  /* ancho de la card */
+  height: 100px;
+  /* altura de la card, igual que tus otras cards */
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  /* texto visible */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* el texto queda abajo de la card */
+}
+
+.limpieza {
+  background-image: url("./css/limpieza.jpg");
+  /* tu imagen */
+  background-size: cover;
+  /* llena toda la card sin deformarse */
+  background-position: center;
+  /* centra la imagen */
+  background-repeat: no-repeat;
+  /* no se repite */
+  width: 150px;
+  /* ancho de la card */
+  height: 100px;
+  /* altura de la card, igual que tus otras cards */
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  /* texto visible */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* el texto queda abajo de la card */
+}
+
+
+/*Centrar las imagenes de fondo en las cards*/
+.card img,
+.carniceria img,
+.lacteos img,
+.frutasyverduras img,
+.bebidas img,
+.limpieza img {
+  width: 100%;
+  /* ocupa todo el ancho de la card */
+  max-width: 200px;
+  /* ancho máximo permitido */
+  height: auto;
+  /* mantiene la proporción */
+  border-radius: 5px;
+  /* opcional, bordes redondeados */
+}
+
+
+.grid-example h1,
+.grid-example h2,
+.grid-example h3,
+.grid-example h4,
+.grid-example h5 {
+  font-size: 20px;
+  /* tamaño uniforme */
+  margin: 40px 0;
+  /* espacio arriba y abajo */
+  color: white;
+  /*color del texto*/
+  text-shadow: 1px 1px 2px black;
+  /* sombra negra suave */
+}
+
+/*---------------------------------------------------*/
+/*reseñas*/
+
+#reseñas {
+  max-width: 1000px;
+  margin: 20px auto 10px auto;
+  padding: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.reseñas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.reseña-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.reseña-card h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.reseña-card p {
+  margin: 5px 0;
+}
+
+/*Escribir reseña*/
+#crear-reseña form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f4f8;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+#crear-reseña input,
+#crear-reseña textarea,
+#crear-reseña select {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+#crear-reseña button {
+  /*botones reseña*/
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(0, 123, 255, 0.5);
+  /* azul más fuerte y visible */
+  color: white;
+  cursor: pointer;
+}
+
+#crear-reseña h2 {
+  text-align: center;
+  /* centra el texto horizontalmente */
+  color: white;
+  /* opcional, si quieres que sea blanco */
+  text-shadow: 1px 1px 2px black;
+  /* opcional, misma sombra del formulario */
+}
+
+/*grid*/
+@media (max-width: 768px) {
+  .grid-example {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-example {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+main {
+  flex: 1;
+  /* hace que main ocupe todo el espacio disponible */
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+
+}
+
+/*media queries en contacto*/
+@media (max-width: 768px) {
+  #contacto form {
+    max-width: 300px;
+    /* ajusta el ancho */
+    padding: 15px;
+    /* reduce un poco el padding */
+  }
+
+  #contacto input,
+  #contacto textarea,
+  #contacto button {
+    font-size: 14px;
+    /* ajusta el tamaño del texto */
+  }
+}
+
+/* Media Queries para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  #contacto form {
+    max-width: 90%;
+    /* ocupa casi toda la pantalla */
+    padding: 10px;
+    /* menos padding */
+  }
+
+  #contacto input,
+  #contacto textarea,
+  #contacto button {
+    font-size: 12px;
+    /* texto más pequeño */
+  }
+}
+
+/*inicio*/
+.historia {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+.historia h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: white;
+  /* azul suave */
+  text-shadow: 1px 1px 2px black;
+}
+
+.historia p {
+  line-height: 1.6;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.imagen-historia {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
+/*-------------------------------------------
+
+/*logo*/
+
+
+
+
+
+.logo-titulo {
+  display: flex;
+  /* pone logo y h1 en fila */
+  align-items: center;
+  /* centra verticalmente */
+  gap: 10px;
+  /* espacio entre logo y h1 */
+}
+
+header .logo {
+  width: 50px;
+  height: auto;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/*-------------------------------------------*/
+/* Ancho de la barra de scroll */
+::-webkit-scrollbar {
+  width: 16px;
+  /* un poco más ancha que el default */
+}
+
+/* Fondo de la barra (track) */
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  /* blanco */
+  border-radius: 8px;
+}
+
+/* La parte que se mueve (thumb) */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(25, 0, 255);
+  ;
+  /* azul */
+  border-radius: 8px;
+  border: 4px solid #ffffff;
+  /* hace que la thumb sea más corta y se vea más pequeña */
+}
+
+/* Efecto al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(25, 0, 255);
+  ;
+  /* azul más oscuro */
+}
+
+/*PRODUCTOS DEL MENU CARNE*/
+#contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+  padding: 0 10px;
+  justify-content: center;
+  /* CENTRA los productos si la fila no está completa */
+}
+
+.producto-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+  /* <-- todas las cards tendrán al menos esta altura */
+}
+
+
+
+
+
+/*BOTONES DE VER PRODUCTOS*/
+.ver-productos {
+  font-size: 14px;
+  padding: 8px 12px;
+  /* espacio interno del botón */
+  border-radius: 5px;
+  /* bordes redondeados */
+  cursor: pointer;
+  /* cambia el cursor al pasar sobre el botón */
+  background-color: rgba(0, 123, 255, 0.5);
+  /* color inicial */
+  color: white;
+  /* color del texto */
+  border: none;
+  /* sin borde */
+  transition: background-color 0.3s ease;
+  /* efecto al cambiar color */
+}
+
+/* Cambiar color cuando se hace click */
+.ver-productos.active {
+  background-color: rgba(0, 200, 100, 0.7);
+  /* verde ejemplo */
+}
+
+.ver-productos:hover {
+  background-color: rgba(0, 123, 255, 1);
+  /* más intenso al pasar mouse */
+}
+
+
+.producto-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; /* mantiene la proporción */
+  background: transparent; /* asegura que no aparezca fondo */
+  margin-bottom: 10px;
+}
+
+
+
+
+
+.mini-carrito {
+  position: absolute;
+  /* que quede flotando */
+  right: 20px;
+  top: 60px;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  /* oculto por defecto */
+  z-index: 100;
+}
+
+.mini-carrito .total {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.oculto {
+  display: none;
+}
+
+
+.botones-producto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+
+
+
+
+
+/* PERSONALIZAR BOTONES AGREGAR Y BORRAR EN LAS CARDS DE PRODUCTOS */
+.botones-producto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* ocupa todo el ancho de la card */
+  gap: 8px;
+  /* separación entre botones */
+  margin-top: auto;
+}
+
+/* Botón AGREGAR - ahora flexible */
+.comprar-carrito {
+  flex: 1;
+  /* se adapta al espacio */
+  white-space: nowrap;
+  /* no se corta el texto */
+  background-color: rgba(0, 123, 255, 0.6);
+  color: white;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  overflow: hidden;
+  /* evita que algo sobresalga */
+  text-overflow: ellipsis;
+  /* si se llena, agrega ... */
+}
+
+/* Botón BORRAR - tamaño fijo */
+.borrar-carrito {
+  width: 38px;/* ANCHO SEGURO */
+  flex-shrink: 0;/* NO se achica nunca */
+  background-color: rgba(0, 123, 255, 0.6);
+  color: white;
+  padding: 6px 0;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+/* CONTENEDOR DE PRODUCTOS */
+#contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* ← valor correcto */
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+  padding: 0 10px;
+  justify-content: center;
+}
+
+/* MINI CARRITO */  /*LISTA DE PRODUCTOS AGREGADOS AL CARRITO*/
+.mini-carrito {
+  position: fixed;              /* ← antes era absolute: hacía que desaparezca */
+  top: 130px; /*Altura de la lista del carrito desde arriba*/
+  width: 195px;             /* ← ancho reducido */
+  max-height: 350px; 
+  overflow-y: auto;
+  background: rgba(0, 123, 255, 0.6);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  display: none;                /* se muestra según la clase */
+  z-index: 9999;                /* ← ahora siempre está visible arriba */
+}
+
+/* Mostrar mini-carrito */
+.mini-carrito:not(.oculto) {
+  display: block;
+}
+
+.mini-carrito div {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.mini-carrito .total {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 16px;
+  border-top: 1px solid white;
+  padding-top: 10px;
+}
+
+
+
+/* Contenedor de los botones del carrito */
+.carrito-controles {
+  position: fixed;      /* siempre visible */
+  top: 83px;            /* desde arriba */
+  right: 20px;          /* desde la derecha */
+  display: flex;
+  gap: 10px;            /* espacio entre botones */
+  z-index: 1000;        /* sobre todo */
+}
+
+/* Botón del carrito y vaciar carrito */
+#boton-carrito,
+#vaciar-carrito {
+  background-color: rgba(0, 123, 255, 0.6);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+
+#boton-carrito:hover,
+#vaciar-carrito:hover {
+  background-color: rgba(0, 123, 255, 1);
+}
+
+
+
+

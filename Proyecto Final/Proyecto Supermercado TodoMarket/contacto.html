@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--LINK DE ICONOS DESCARGADOS-->
+    <link rel="stylesheet" href="../Proyecto Supermercado TodoMarket/style.css">
+    <title>Proyecto Final</title>
+</head>
+
+<body> <!--FORMULARIO ACA EMPÍEZA EL BODY-->
+    <header> <!--MENU-->
+        <img src="../Proyecto Supermercado TodoMarket/css/logo.png" alt="Logo TodoMarket" class="logo">
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./reseñas.html">Reseñas</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contacto">
+            <form action="https://formspree.io/f/mvgwwgjj" id="form-contacto" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+
+
+                <label for="email">Correo electronico:</label>
+                <input type="email" id="email" name="email" placeholder="Correo_electronico@ejemplo.com" required>
+
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Deje su mensaje..." required></textarea>
+
+
+                <div class="botones">
+                    <button type="submit">Enviar</button>
+                    <button type="reset"><i class="fa-solid fa-trash"></i></button>
+                </div>
+
+            </form>
+
+        </section>
+
+
+
+    </main>
+    <footer>
+        <p>&copy; 2025 TodoMarket. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+
+    <script src="/Proyectos/Proyecto Final/Proyecto Supermercado TodoMarket/js/index.js"></script>
+</body>
+
+
+</html>

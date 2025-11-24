@@ -1,0 +1,33 @@
+[
+  { "nombre": "Bife De chorizo de Novillo x kg", "precio": "3.500", "imagen": "img/bidedechorizo.webp", "categoria": "carniceria" },
+  { "nombre": "Pollo entero x Unidad", "precio": "2.800", "imagen": "img/pollo.png", "categoria": "carniceria" },
+  { "nombre": "Chorizo 10 unidades/x kg", "precio": "3.700", "imagen": "img/chorizo.png", "categoria": "carniceria" },
+  { "nombre": "Costilla de Cerdo x kg", "precio": "9.500", "imagen": "img/carnedecerdo.png", "categoria": "carniceria" },
+  { "nombre": "Supremas de Pollo x kg", "precio": "3.500", "imagen": "img/supremasdepollo.png", "categoria": "carniceria" },
+
+  { "nombre": "Leche descremada x Unidad", "precio": "1.250", "imagen": "img/leche.png", "categoria": "lacteos" },
+  { "nombre": "Yogur Pote x Unidad", "precio": "1.450", "imagen": "img/yogur.png", "categoria": "lacteos" },
+  { "nombre": "Manteca 100g x Unidad", "precio": "2.700", "imagen": "img/manteca.png", "categoria": "lacteos" },
+  { "nombre": "Queso Cremoso x Unidad", "precio": "2.250", "imagen": "img/quesocremoso.png", "categoria": "lacteos" },
+  { "nombre": "Queso Untable x Unidad", "precio": "2.500", "imagen": "img/quesountable.png", "categoria": "lacteos" },
+
+  { "nombre": "Manzana x Kg", "precio": "1.200", "imagen": "img/manzana.png", "categoria": "frutasyverduras" },
+  { "nombre": "Banana x Kg", "precio": "1.200", "imagen": "img/banana.png", "categoria": "frutasyverduras" },
+  { "nombre": "Zanahoria x Kg", "precio": "1.400", "imagen": "img/zanahoria.png", "categoria": "frutasyverduras" },
+  { "nombre": "Lechuga x Kg", "precio": "1.500", "imagen": "img/lechuga.png", "categoria": "frutasyverduras" },
+  { "nombre": "Tomate x KG", "precio": "1.600", "imagen": "img/tomate.png", "categoria": "frutasyverduras" },
+
+  { "nombre": "Manaos 1.5L x Unidad", "precio": "1.500", "imagen": "img/manaos.png", "categoria": "bebidas" },
+  { "nombre": "Fanta 1.5L x Unidad", "precio": "1.800", "imagen": "img/fanta.png", "categoria": "bebidas" },
+  { "nombre": "Coca Cola 1L x Unidad", "precio": "2.500", "imagen": "img/cocacola.png", "categoria": "bebidas" },
+  { "nombre": "Sevena Sprite 1L x Unidad", "precio": "2.000", "imagen": "img/sprite.png", "categoria": "bebidas" },
+  { "nombre": "Jugo Placer x 750ml", "precio": "1.200", "imagen": "img/jugoplacer.png", "categoria": "bebidas" },
+
+   { "nombre": "Detergente x 1L", "precio": "2.800", "imagen": "img/detergente.png", "categoria": "limpieza" },
+  { "nombre": "Trapo de piso x Unidad", "precio": "1.250", "imagen": "img/trapodepiso.jpg", "categoria": "limpieza" },
+  { "nombre": "Lavandina 1L x Unidad", "precio": "2.500", "imagen": "img/lavandina.png", "categoria": "limpieza" },
+  { "nombre": "Guantes de limpieza x Unidad", "precio": "1.500", "imagen": "img/guantes.png", "categoria": "limpieza" },
+  { "nombre": "Limpiador multiuso x 1L", "precio": "2.750", "imagen": "img/limpiadordepiso.png", "categoria": "limpieza" }
+]
+
+
